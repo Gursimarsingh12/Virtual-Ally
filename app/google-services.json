@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "513810555446",
+    "project_id": "virtual-ally-c0ca8",
+    "storage_bucket": "virtual-ally-c0ca8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513810555446:android:8408b123b67a6d6ffe6e97",
+        "android_client_info": {
+          "package_name": "com.chatbot.geminiai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmqMbVhxlRmqvwDvujgCZA3vVu_VCcIw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

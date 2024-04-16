@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AIChatbot" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+         <item name="android:statusBarColor">@color/my_light_primary</item>
+        <item name="colorPrimary">#DF9ECD</item>
+        <item name="android:textColor">#FAFAFA</item>
+    </style>
+</resources>

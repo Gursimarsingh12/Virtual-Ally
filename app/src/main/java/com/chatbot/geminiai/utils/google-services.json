@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "513810555446",
+    "project_id": "virtual-ally-c0ca8",
+    "storage_bucket": "virtual-ally-c0ca8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513810555446:android:8408b123b67a6d6ffe6e97",
+        "android_client_info": {
+          "package_name": "com.chatbot.geminiai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513810555446-hlcemijbka3kh5l4cj17p8v9vvoih4f1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chatbot.geminiai",
+            "certificate_hash": "43346af2e2f778217908dd19c5a1ea94a7b7f949"
+          }
+        },
+        {
+          "client_id": "513810555446-bt45rf3cptv90sv5i6qjtmnki9lonsrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmqMbVhxlRmqvwDvujgCZA3vVu_VCcIw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513810555446-bt45rf3cptv90sv5i6qjtmnki9lonsrh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chatbot.geminiai.fragments.HomeFragment"
+    android:background="@color/my_light_primary"
+    android:fitsSystemWindows="true">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#7A808C"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/inputQuery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_text_bg"
+        android:drawableEnd="@drawable/img_icon"
+        android:hint="Ask me anything..."
+        android:inputType="textMultiLine"
+        android:maxHeight="150dp"
+        android:minHeight="60dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:textColorHint="#DDE0E6"
+        android:textColor="#FAFAFA"
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sendBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="24dp"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="3dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:drawablePadding="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/send_btn_bg"
+        android:src="@drawable/send_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/inputQuery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inputQuery" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/inputQuery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        tools:listitem="@layout/rv_item_user"
+        android:layout_marginBottom="10dp"
+        />
+
+    <include
+        android:id="@+id/materialToolbar"
+        layout="@layout/home_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/bg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How can I help you my friend?"
+        android:layout_marginTop="20dp"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/bg_logo"
+        app:layout_constraintStart_toStartOf="@+id/bg_logo"
+        app:layout_constraintTop_toBottomOf="@+id/bg_logo"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/bg_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintBottom_toTopOf="@+id/inputQuery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        android:visibility="visible"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
